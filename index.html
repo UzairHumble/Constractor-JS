@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="bars">
+        <div class="shapes">
+            <h2>To See Shapes Click On Button Below</h2>
+            <button onCLick="showShape()">Click</button>
+        </div>
+        <div class="employes">
+            <h2>To See Employes Data Click On Button Below</h2>
+            <button onCLick="showEmployee()">Click</button>
+        </div>
+        <div class="resturant">
+            <h2>To See Resturant Menu Click On Button Below</h2>
+            <button onCLick="showMenu()">Click</button>
+        </div>
+    </div>
+    <div id="container">
+
+        <div id="employes-data">
+            <button
+                style="float: right; background: transparent; border: 0px; cursor: pointer; margin-top: 3px; margin-right: 3px;"
+                onCLick="hideEmployee()"><img src="./close.png" style="height: 20px; width: 20px;"></button>
+            <br>
+            <br>
+            <table border="2" style="text-align: center;">
+                <tr>
+                    <th style="padding: 20px;">Employee Name</th>
+                    <th style="padding: 5px;">Employee ID</th>
+                    <th style="padding: 40px;">Email</th>
+                    <th style="padding: 30px;">Address</th>
+                    <th style="padding: 5px;">Designation</th>
+                    <th style="padding: 5px;">Experience</th>
+                    <th style="padding: 5px;">Salary</th>
+                </tr>
+                <tr>
+                    <td id="emp1-name"></td>
+                    <td id="emp1-id"></td>
+                    <td id="emp1-email"></td>
+                    <td id="emp1-address"></td>
+                    <td id="emp1-designation"></td>
+                    <td id="emp1-experience"></td>
+                    <td id="emp1-salary"></td>
+                </tr>
+                <tr>
+                    <td id="emp2-name"></td>
+                    <td id="emp2-id"></td>
+                    <td id="emp2-email"></td>
+                    <td id="emp2-address"></td>
+                    <td id="emp2-designation"></td>
+                    <td id="emp2-experience"></td>
+                    <td id="emp2-salary"></td>
+                </tr>
+                <tr>
+                    <td id="emp3-name"></td>
+                    <td id="emp3-id"></td>
+                    <td id="emp3-email"></td>
+                    <td id="emp3-address"></td>
+                    <td id="emp3-designation"></td>
+                    <td id="emp3-experience"></td>
+                    <td id="emp3-salary"></td>
+                </tr>
+                <tr>
+                    <td id="emp4-name"></td>
+                    <td id="emp4-id"></td>
+                    <td id="emp4-email"></td>
+                    <td id="emp4-address"></td>
+                    <td id="emp4-designation"></td>
+                    <td id="emp4-experience"></td>
+                    <td id="emp4-salary"></td>
+                </tr>
+                <tr>
+                    <td id="emp5-name"></td>
+                    <td id="emp5-id"></td>
+                    <td id="emp5-email"></td>
+                    <td id="emp5-address"></td>
+                    <td id="emp5-designation"></td>
+                    <td id="emp5-experience"></td>
+                    <td id="emp5-salary"></td>
+                </tr>
+                <tr>
+                    <td id="emp6-name"></td>
+                    <td id="emp6-id"></td>
+                    <td id="emp6-email"></td>
+                    <td id="emp6-address"></td>
+                    <td id="emp6-designation"></td>
+                    <td id="emp6-experience"></td>
+                    <td id="emp6-salary"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="resturant-menu">
+            <button
+                style="float: right; background: transparent; border: 0px; cursor: pointer; margin-top: 5px; margin-right: 3px;"
+                onClick="hideMenu()"><img src="./close.png" style="height: 20px; width: 20px;"></button>
+            <br>
+            <br>
+            <br>
+            <div class="menu-card">
+                <div class="item-name">
+                    <h2 id="item1"></h2>
+                    <h2 id="item2"></h2>
+                    <h2 id="item3"></h2>
+                    <h2 id="item4"></h2>
+                    <h2 id="item5"></h2>
+                    <h2 id="item6"></h2>
+                    <h2 id="item7"></h2>
+                    <h2 id="item8"></h2>
+                </div>
+                <div class="item-price">
+                    <h2 id="price1"></h2>
+                    <h2 id="price2"></h2>
+                    <h2 id="price3"></h2>
+                    <h2 id="price4"></h2>
+                    <h2 id="price5"></h2>
+                    <h2 id="price6"></h2>
+                    <h2 id="price7"></h2>
+                    <h2 id="price8"></h2>
+                </div>
+            </div>
+        </div>
+        <div id="shapes">
+            <button
+                style="float: right; background: transparent; border: 0px; cursor: pointer; margin-top: 5px; margin-right: 3px;"
+                onClick="hideShape()"><img src="./close.png" style="height: 20px; width: 20px;"></button>
+                <br>
+                <br>
+            <div class="different-shapes">
+                <div class="circle"></div>
+                <br>
+                <div class="square"></div>
+                <br>
+                <div class="rectangle"></div>
+                <br>
+                <div class="oval"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

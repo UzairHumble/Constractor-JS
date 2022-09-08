@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(63, 190, 138);
+    overflow: hidden;
+}
+#bars{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+#container{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.shapes, .employes, .resturant{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(161, 121, 76);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+}
+.shapes h2, .employes h2, .resturant h2{
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+.shapes button, .employes button, .resturant button{
+    height: 35px;
+    width: 75px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'PT Serif', serif;
+    color: rgb(17, 17, 19);
+    background-color: rgba(231, 131, 0, 0.76);
+}
+#employes-data{
+    height: 350px;
+    width: 820px;
+    background-color: rgb(190, 190, 190);
+    display: flex;
+    flex-direction: column;
+}
+#resturant-menu{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(155, 116, 43);
+    border-radius: 5px;
+}
+.menu-card{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+#shapes{
+    height: 400px;
+    width: 350px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+}
+.different-shapes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+.circle{
+    height: 70px;
+    width: 70px;
+    background-color: red;
+    border-radius: 50%;
+}
+.square{
+    height: 70px;
+    width: 70px;
+    background-color: green;
+}
+.rectangle{
+    height: 70px;
+    width: 150px;
+    background-color: blue;
+}
+.oval{
+
+        width: 160px;
+        height: 80px;
+        background: orange;
+        border-radius: 100px / 50px;
+}
+/* .employes-data table tr th{
+    width: 445px;
+} */
